@@ -21,9 +21,9 @@ print("Looking up available downloads")
 
 try:
     with urllib.request.urlopen(plexDownloadApi) as url:
-        data = json.loads(url.read())
-except:
-    print('ERROR: There was an error looking up available downloads. Please try again later')
+        data = json.loads(url.read().decode())
+except Exception as e:
+    print(e)
     sys.exit()
 
 item = data['computer'][platform]
