@@ -45,7 +45,7 @@ if download_url and not os.path.isfile(file_name):
 install = input('Install Plex Media Server ' + version + '? Type [Y] to continue: ')
 
 if install == 'y':
-    subprocess.run(['dpkg', '-i', file_name])
+    subprocess.run(['sudo', 'dpkg', '-i', file_name])
     os.remove(file_name)
 else:
     print('Installation aborted')
