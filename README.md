@@ -2,5 +2,5 @@
 Update Plex Media Server on Ubuntu 64-bit
 
 ## Assumptions
-- Running Linux 64-bit
+- Running Ubuntu 64-bit (any version)
 - Uses plexpass update channel
