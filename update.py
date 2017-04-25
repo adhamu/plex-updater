@@ -45,11 +45,7 @@ if download_url and not os.path.isfile(file_name):
 install = input('Install Plex Media Server ' + version + '? Type [Y] to continue: ')
 
 if install == 'y':
-    subprocess.run(['ls', '-l', file_name])
+    subprocess.run(['dpkg', '-i', file_name])
     os.remove(file_name)
 else:
     print('Installation aborted')
-    #  subprocess.run(['dpkg', '-i', file_name])
-    #  subprocess.run(['rm', file_name])
-    # use shutil.unlink instead!
-    # Also this deletion should happen in a 'finally' block so it always gets deleted
