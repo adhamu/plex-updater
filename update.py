@@ -17,6 +17,8 @@ architecture = "linux-ubuntu-x86_64"
 distro = 'ubuntu'
 plexDownloadApi = "https://plex.tv/api/downloads/1.json?channel=plexpass"
 
+os.chdir(os.getcwd())
+
 print("Looking up available downloads")
 
 try:
