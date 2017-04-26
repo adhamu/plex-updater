@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-Ubuntu 64-bit Plex Media Server Updater.
-
-Downloads the latest Plex media server .deb file and installs it.
-"""
-
 import json
 import os
 import subprocess
