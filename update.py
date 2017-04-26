@@ -15,21 +15,21 @@ import urllib.request
 platform = "Linux"
 architecture = "linux-ubuntu-x86_64"
 distro = 'ubuntu'
-plexDownloadApi = "https://plex.tv/api/downloads/1.json?channel=plexpass"
+plex_download_api = "https://plex.tv/api/downloads/1.json?channel=plexpass"
 
 os.chdir(os.getcwd())
 
 print("Looking up available downloads")
 
 try:
-    with urllib.request.urlopen(plexDownloadApi) as url:
+    with urllib.request.urlopen(plex_download_api) as url:
         data = json.loads(url.read().decode())
 except Exception as e:
     print(e)
     sys.exit()
 
 item = data['computer'][platform]
-releaseData = item['release_date']
+release_date = item['release_date']
 version = item['version']
 
 for release in item['releases']:
