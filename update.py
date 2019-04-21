@@ -7,8 +7,8 @@ import sys
 import urllib.request
 
 platform = "Linux"
-architecture = "linux-ubuntu-x86_64"
-distro = 'ubuntu'
+architecture = "linux-x86_64"
+distro = 'debian'
 plex_download_api = "https://plex.tv/pms/downloads/5.json?channel=plexpass"
 
 os.chdir(os.getcwd())
