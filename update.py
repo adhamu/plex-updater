@@ -9,7 +9,7 @@ import urllib.request
 platform = "Linux"
 architecture = "linux-ubuntu-x86_64"
 distro = 'ubuntu'
-plex_download_api = "https://plex.tv/api/downloads/1.json?channel=plexpass"
+plex_download_api = "https://plex.tv/pms/downloads/5.json?channel=plexpass"
 
 os.chdir(os.getcwd())
 
